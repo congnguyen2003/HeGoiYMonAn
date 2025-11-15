@@ -1,0 +1,106 @@
+═══════════════════════════════════════════════════════════════════════════════
+             🍳 HỆ THỐNG GỢI Ý CÔNG THỨC NẤU ĂN - HƯỚNG DẪN NHANH
+═══════════════════════════════════════════════════════════════════════════════
+
+📖 ĐỂ XEM HƯỚNG DẪN CHI TIẾT, MỞ FILE: HUONG_DAN_CHI_TIET.md
+
+═══════════════════════════════════════════════════════════════════════════════
+⚡ CÀI ĐẶT VÀ CHẠY NHANH
+═══════════════════════════════════════════════════════════════════════════════
+
+BƯỚC 1️⃣ – Chạy Backend
+──────────────────────
+Mở Terminal / PowerShell và gõ:
+  cd backend
+  pip install flask flask-cors
+  python app.py
+
+Bạn sẽ thấy: ✓ Running on http://127.0.0.1:5000
+✅ Giữ terminal này mở (đừng đóng nó!)
+
+
+BƯỚC 2️⃣ – Chạy Frontend
+────────────────────────
+Mở Terminal / PowerShell MỚI và gõ:
+  cd frontend
+  npm install
+  npm start
+
+Trình duyệt sẽ tự động mở: ✓ http://localhost:3000
+✅ Ứng dụng sẵn sàng sử dụng!
+
+
+═══════════════════════════════════════════════════════════════════════════════
+👤 HƯỚNG DẪN NGƯỜI DÙNG
+═══════════════════════════════════════════════════════════════════════════════
+
+1️⃣  TAB "⬇️ SỰ DIỄN TIẾN" – Tìm món từ nguyên liệu
+────────────────────────────────────────────────────
+• Nhập nguyên liệu: "thịt gà, sả, ớt, gừng"
+• Nhấp "🔍 Gợi ý món ăn"
+• Xem các món có thể nấu + công thức + video
+
+2️⃣  TAB "⬆️ SỰ DIỄN LÙI" – Tìm nguyên liệu từ tên món
+──────────────────────────────────────────────────────
+• Nhập tên món: "Gà kho gừng"
+• Nhấp "🔍 Tìm kiếm"
+• Xem nguyên liệu cần thiết + công thức + video
+
+
+═══════════════════════════════════════════════════════════════════════════════
+⚙️  HƯỚNG DẪN QUẢN TRỊ VIÊN
+═══════════════════════════════════════════════════════════════════════════════
+
+1️⃣  Nhấp "⚙️ Quản trị viên"
+2️⃣  Đăng nhập: Mật khẩu = "admin123"
+3️⃣  Thêm/Sửa/Xóa các luật (công thức)
+4️⃣  Nhấp "💾 Lưu tất cả thay đổi" để lưu
+
+⚠️  QUAN TRỌNG: Luôn nhấp "Lưu" trước khi tắt ứng dụng!
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🆘 KHẮC PHỤC SỰ CỐ
+═══════════════════════════════════════════════════════════════════════════════
+
+❌ Hiển thị trắng / lỗi kết nối?
+   → Kiểm tra: Terminal backend có chạy tại http://127.0.0.1:5000 không?
+   → Nếu không, mở Terminal mới, cd backend, python app.py
+
+❌ Không tìm thấy package?
+   → Chạy: pip install flask flask-cors (backend)
+   → Chạy: npm install (frontend)
+
+❌ Dữ liệu không lưu?
+   → Bạn có nhấp "Lưu tất cả thay đổi" chưa?
+
+
+═══════════════════════════════════════════════════════════════════════════════
+📋 CẤU TRÚC THƯMỤC
+═══════════════════════════════════════════════════════════════════════════════
+
+web/
+├── backend/              ← Server (Python Flask)
+│   ├── app.py           ← File chính
+│   ├── rules.json       ← Cơ sở tri thức (các luật)
+│   └── ...
+├── frontend/            ← Giao diện (React)
+│   ├── src/
+│   │   ├── App.jsx      ← Trang chính
+│   │   ├── pages/
+│   │   │   ├── UserPage.jsx    ← Giao diện người dùng
+│   │   │   └── AdminPage.jsx   ← Giao diện admin
+│   │   └── styles/      ← CSS
+│   └── ...
+├── HUONG_DAN_CHI_TIET.md  ← Hướng dẫn chi tiết (📖 MỞ ĐỂ XEM!)
+└── huongdan.txt          ← File này
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📖 ĐỂ BIẾT THÊM CHI TIẾT, VUI LÒNG MỞ FILE:
+   HUONG_DAN_CHI_TIET.md
+
+═══════════════════════════════════════════════════════════════════════════════
+Phiên bản: 1.0 | Cập nhật: 15/11/2024 | Hỗ trợ: Tiếng Việt
+═══════════════════════════════════════════════════════════════════════════════
